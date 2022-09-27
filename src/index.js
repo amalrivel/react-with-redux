@@ -11,6 +11,7 @@ import reportWebVitals from "./reportWebVitals";
 import HomePage from "./pages/homePage";
 import { Provider } from "react-redux";
 import { store } from "./redux/store";
+import Landing from "./pages/homePage/landing";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -21,7 +22,7 @@ const router = createBrowserRouter(
       // action={rootAction}
       // errorElement={<ErrorPage />}
     >
-      <Route path="sewamobil" element={<HomePage />} />
+      <Route path="/" element={<Landing />} />
     </Route>
   )
 );
