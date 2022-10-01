@@ -4,22 +4,22 @@ const OurServices = () => {
   const counter = useSelector((state) => state.homePageReducer.OurServices);
   return (
     <div className="container mx-auto px-4 py-6" id="Our Services">
-      <div className="grid gap-4 md:grid-cols-2 grid-cols-1 grid-flow-row">
-        <div className="flex items-center md:p-0 p-9">
+      <div className="grid gap-4 lg:grid-cols-2 grid-cols-1 grid-flow-row">
+        <div className="flex justify-center items-center">
           <img src={counter.service} alt={counter.service} />
         </div>
         <div className="flex flex-col justify-center h-full">
           <h2 className="my-2">
             {counter.title}
           </h2>
-          <h3 className="my-2">
+          <h4 className="my-2">
             {counter.content}
-          </h3>
+          </h4>
           <ul>
             {counter.ourService.map((item) => (
               <li className="py-2 flex flex-row">
                 <img className="object-none" src={counter.check} alt="check" />
-                <h4 className="px-2">{item}</h4>
+                <p className="px-2">{item}</p>
               </li>
             ))}
           </ul>

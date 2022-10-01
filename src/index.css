@@ -28,33 +28,33 @@
   .btn-primary {
     @apply py-2 px-4 bg-green-500 text-white font-semibold rounded-lg shadow-md hover:bg-green-700 focus:outline-none focus:ring-2 focus:ring-green-400 focus:ring-opacity-75;
   }
+
   .container-hero {
     width: 100%;
-}
-@media (min-width: 640px) {
+  }
+  @media (min-width: 640px) {
     .container-hero {
-        max-width: calc(640px + (100% - 640px) / 2);
+      max-width: calc(640px + (100% - 640px) / 2);
     }
-}
-@media (min-width: 768px) {
+  }
+  @media (min-width: 768px) {
     .container-hero {
-        max-width: calc(768px + (100% - 768px) / 2); 
+      max-width: calc(768px + (100% - 768px) / 2);
     }
-}
-@media (min-width: 1024px) {
+  }
+  @media (min-width: 1024px) {
     .container-hero {
-        max-width: calc(1024px + (100% - 1024px) / 2);
+      max-width: calc(1024px + (100% - 1024px) / 2);
     }
-}
-@media (min-width: 1280px) {
+  }
+  @media (min-width: 1280px) {
     .container-hero {
-        max-width: calc(1280px + (100% - 1280px) / 2);
+      max-width: calc(1280px + (100% - 1280px) / 2);
     }
-}
-@media (min-width: 1536px) {
+  }
+  @media (min-width: 1536px) {
     .container-hero {
-        max-width: calc(1536px + (100% - 1536px) / 2);
+      max-width: calc(1536px + (100% - 1536px) / 2);
     }
-}
-
+  }
 }

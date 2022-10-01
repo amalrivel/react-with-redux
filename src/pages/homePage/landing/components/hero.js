@@ -13,9 +13,9 @@ const Hero = () => {
             <h4 className="my-2">
               {counter.content}
             </h4>
-            <button className="btn-primary my-2">Mulai Sewa Mobil</button>
+            <button className="btn-primary my-2 w-44">Mulai Sewa Mobil</button>
           </div>
-          <div className="flex items-end justify-end">
+          <div className="flex items-end justify-end ml-4">
             <img src={counter.car} alt="car" />
           </div>
         </div>

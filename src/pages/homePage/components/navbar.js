@@ -51,7 +51,7 @@ const Navbar = () => {
             >
               <div className="w-48">
                 <div className="px-4 py-2.5">
-                  <div className="flex flex-wxzxzxrap justify-between items-center pb-4">
+                  <div className="flex flex-wrap justify-between items-center pb-4">
                     <p className="font-bold">BCR</p>
                     <button
                       onClick={() => {

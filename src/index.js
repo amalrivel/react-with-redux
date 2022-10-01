@@ -12,17 +12,21 @@ import HomePage from "./pages/homePage";
 import { Provider } from "react-redux";
 import { store } from "./redux/store";
 import Landing from "./pages/homePage/landing";
+import DashboardPage from "./pages/dasboardPage";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
-    <Route
-      path="/"
-      element={<HomePage />}
-      // loader={rootLoader}
-      // action={rootAction}
-      // errorElement={<ErrorPage />}
-    >
-      <Route path="/" element={<Landing />} />
+    <Route>
+      <Route
+        path="/"
+        element={<HomePage />}
+        // loader={rootLoader}
+        // action={rootAction}
+        // errorElement={<ErrorPage />}
+      >
+        <Route path="/" element={<Landing />} />
+      </Route>
+      <Route path="/dashboard" element={<DashboardPage />}></Route>
     </Route>
   )
 );
