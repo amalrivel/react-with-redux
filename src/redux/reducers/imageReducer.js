@@ -8,9 +8,10 @@ import Service from "../../assets/img_service.png";
 import Facebook from "../../assets/icon_facebook.svg";
 import Mail from "../../assets/icon_mail.svg";
 import Instagram from "../../assets/icon_instagram.svg";
+import Photo from "../../assets/img_photo.png";
 import Twitch from "../../assets/icon_twitch.svg";
 import Twitter from "../../assets/icon_twitter.svg";
-import  Check from "../../assets/check.png";
+import Check from "../../assets/check.png";
 
 export const imageReducer = {
   Complete,
@@ -26,4 +27,5 @@ export const imageReducer = {
   Twitch,
   Twitter,
   Check,
+  Photo
 };

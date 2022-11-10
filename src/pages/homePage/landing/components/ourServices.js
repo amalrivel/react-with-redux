@@ -1,7 +1,7 @@
 import { useSelector } from "react-redux";
 
 const OurServices = () => {
-  const counter = useSelector((state) => state.homePageReducer.OurServices);
+  const counter = useSelector((state) => state.homePageReducer.ourServices);
   return (
     <div className="container mx-auto px-4 py-6" id="Our Services">
       <div className="grid gap-4 lg:grid-cols-2 grid-cols-1 grid-flow-row">
