@@ -16,8 +16,8 @@ const OurServices = () => {
             {counter.content}
           </h4>
           <ul>
-            {counter.ourService.map((item) => (
-              <li className="py-2 flex flex-row">
+            {counter.ourService.map((item, index) => (
+              <li className="py-2 flex flex-row" key={index}>
                 <img className="object-none" src={counter.check} alt="check" />
                 <p className="px-2">{item}</p>
               </li>

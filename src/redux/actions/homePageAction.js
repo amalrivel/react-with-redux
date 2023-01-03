@@ -18,3 +18,17 @@ export const handleOnPrevClick = (payload) => (dispatch) => {
     payload: payload >= 100 ? (payload = 100) : (payload += 100),
   });
 };
+
+export const handleChange = (payload) => (dispatch) => {
+  dispatch({
+    type: "handleChange",
+    payload: payload.isExpanded ? payload.panel : false,
+  });
+};
+
+export const callAPI = (payload) => (dispatch) =>{
+  dispatch({
+    type: "callAPI",
+    payload: payload
+  })
+}

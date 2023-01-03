@@ -13,6 +13,7 @@ import { Provider } from "react-redux";
 import { store } from "./redux/store";
 import Landing from "./pages/homePage/landing";
 import DashboardPage from "./pages/dasboardPage";
+import Search from "./pages/homePage/search";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -25,6 +26,7 @@ const router = createBrowserRouter(
         // errorElement={<ErrorPage />}
       >
         <Route path="/" element={<Landing />} />
+        <Route path="/search-car" element={<Search />} />
       </Route>
       <Route path="/dashboard" element={<DashboardPage />}></Route>
     </Route>

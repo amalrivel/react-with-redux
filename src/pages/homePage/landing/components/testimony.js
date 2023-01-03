@@ -19,9 +19,10 @@ const Testimony = () => {
       <div className="lg:-mx-36 md:-mx-12">
         <div className="">
           <ul className="overflow-hidden flex justify-center ">
-            {[1, 2, 3].map(() => (
+            {[1, 2, 3].map((item) => (
               <div
                 className={`transition duration-700 delay-100 translate-x-[${counter.currentIndex}%]`}
+                key={item}
               >
                 <div className="mx-2">
                   <div className="flex md:flex-nowrap flex-wrap justify-center bg-blue-100 rounded-md md:w-[640px] sm:w-[87vw] w-[92vw] p-12">

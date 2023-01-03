@@ -18,13 +18,13 @@ const Navbar = () => {
           </Link>
           <div className="sm:block hidden">
             <ul className="flex flex-row items-center">
-              {counter.navList.map((item) =>
+              {counter.navList.map((item, index) =>
                 item !== "Register" ? (
-                  <li className="mx-4">
+                  <li className="mx-4" key={index}>
                     <Link to={"#" + item}>{item}</Link>
                   </li>
                 ) : (
-                  <li>
+                  <li key={index}>
                     <button className="btn-primary mx-4">{item}</button>
                   </li>
                 )
@@ -62,13 +62,13 @@ const Navbar = () => {
                     </button>
                   </div>
                   <ul>
-                    {counter.navList.map((item) =>
+                    {counter.navList.map((item, index) =>
                       item !== "Register" ? (
-                        <li className="my-3">
+                        <li className="my-3" key={index}>
                           <Link to={"#" + item}>{item}</Link>
                         </li>
                       ) : (
-                        <li>
+                        <li key={index}>
                           <button className="btn-primary my-3">{item}</button>
                         </li>
                       )

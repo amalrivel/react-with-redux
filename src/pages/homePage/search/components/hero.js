@@ -1,5 +1,4 @@
 import { useSelector } from "react-redux";
-import { Link } from "react-router-dom";
 
 const Hero = () => {
   const counter = useSelector((state) => state.homePageReducer.hero);
@@ -14,10 +13,6 @@ const Hero = () => {
             <h4 className="my-2">
               {counter.content}
             </h4>
-            <Link to={"/search-car"}>
-            
-            <button className="btn-primary my-2 w-44">Mulai Sewa Mobil</button>
-            </Link>
           </div>
           <div className="flex items-end justify-end ml-4">
             <img src={counter.car} alt="car" />
